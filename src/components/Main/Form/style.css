@@ -1,0 +1,61 @@
+.grid-form{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.input-form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.input-form > select,
+input{
+  border: none;
+  background-color: transparent;
+  appearance: none;
+  border-bottom: 2px solid rgb(2, 62, 175);
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input::placeholder{
+  color: black;
+}
+
+.input-form > select:focus,
+input:focus {
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.grid-form > button {
+    grid-column: 1/3;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    padding: 8px;
+    color: white;
+    background-color: rgb(2, 62, 175);
+    cursor: pointer;
+}
+
+.segment{
+  height: 30px;
+  font-size: 14px;
+  text-align: center;
+
+}
+

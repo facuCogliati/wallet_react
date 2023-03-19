@@ -1,0 +1,21 @@
+.card-container-income {
+    border-bottom: 10px solid rgba(0, 255, 0, 0.5) ;
+    padding: 10px 10px 0 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card-container-expense {
+    border-bottom: 10px solid rgba(255, 0, 0, 0.5) ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px 10px 0 10px;
+}
+
+.canvas-div {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+

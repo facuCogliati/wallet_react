@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import DetailsCard from './components/Details/Details';
+import Main from './components/Main/Main';
+import { PushToTalkButton, BigTranscript, IntroPopup, PushToTalkButtonContainer} from "@speechly/react-ui";
+import { Toaster } from 'react-hot-toast';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <Toaster position="top-left"/>
+    <div className='container'>
+       <div className='grid-container'>
+        
+        <div className='card'>
+          <DetailsCard title={'Income'}/>
+        </div>
+
+        <div className='card'>
+          <Main />
+        </div>
+
+        <div className='card'>
+        <DetailsCard title={'Expense'}/>
+        </div>
+       </div>
+
+    
     </div>
-  );
+    <PushToTalkButtonContainer>
+    <PushToTalkButton size='70px'  />
+    </PushToTalkButtonContainer>
+    </>
+  )
 }
 
-export default App;
+export default App

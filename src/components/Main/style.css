@@ -1,0 +1,10 @@
+.main {
+    padding: 0px 5px 5px 5px;
+    height: 610px;
+}
+
+.main > h1{
+  height : 30px;
+  text-align: center;
+}
+
